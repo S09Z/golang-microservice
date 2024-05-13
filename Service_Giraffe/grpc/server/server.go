@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 	"net"
-	pb "Service_1/grpc/proto"
+	pb "grpc/proto"
 
 	"google.golang.org/grpc"
 )

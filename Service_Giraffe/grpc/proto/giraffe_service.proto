@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package="./proto_models";
+
+package proto;
+
+service Giraffe {
+  rpc GiraffeSayHello (GiraffeRequest) returns (GiraffeReply);
+}
+
+message GiraffeRequest {
+  string name = 1;
+}
+
+message GiraffeReply {
+  string message = 1;
+}
